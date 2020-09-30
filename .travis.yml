@@ -1,7 +1,9 @@
 sudo: required
 dist: trusty
 language: generic
-
+arch:
+  - amd64
+  - ppc64le
 before_install:
    - sudo apt-get update
    - sudo apt-get install -y --no-install-recommends moreutils dblatex asciidoc texlive-lang-german calibre calibre-bin python-sip epubcheck build-essential debhelper xmlto fakeroot
